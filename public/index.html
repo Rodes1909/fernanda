@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>AttendanceTracker</title>
+    
+</head>
+<body>
+    <div class="flex-container">
+    <h1 align="center">Registro de estudiantes</h1>
+    <br>
+    </div>
+    <br>  
+    <div class="formulario">
+    <form align='center' action="/ingresarProducto" method="POST">
+        <p><center>Ingresa el registro de un niño para comenzar:</center></p>
+            <input type="text" name="nombre" placeholder="Nombre del Niño" maxlength="40" minlength="3" required>
+            <input type="number" step="0.1" name="precio" min="0.1" placeholder="Edad" required>
+            
+               
+                <input type="number" name="cantidad" min="1" placeholder="Ingresa el numero de inasistencias" class="input" required>
+          
+               <input class="submit" type="submit" value="Agregar">
+            
+    </form>
+    <br>
+    </div>
+   
+
+    <form action="/mostrarProductos" method="POST">
+        <input type="submit" value="Niños registrados">
+    </form>
+</body>
+</html>
