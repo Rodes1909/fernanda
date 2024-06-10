@@ -7,7 +7,8 @@ class Conectar{
             host : MYSQLHOST,
             user : MYSQLUSER,
             password : MYSQL_ROOT_PASSWORD,
-            database : MYSQLDATABASE
+            database : MYSQLDATABASE,
+            port: PORT
         });
 
         conection.connect();
