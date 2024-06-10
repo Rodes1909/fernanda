@@ -8,7 +8,7 @@ class Conectar{
             user : MYSQLUSER,
             password : MYSQL_ROOT_PASSWORD,
             database : MYSQLDATABASE,
-            port: PORT
+            port: MYSQLPORT
         });
 
         conection.connect();
